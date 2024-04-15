@@ -20,26 +20,26 @@
     <li><a href='phpwebfiles/home.php'>Home</a></li>
     <li><a href='http://'>Belts</a></li>
     <li><a href='http://'>Necklaces</a></li>
-    <li id="cart"><a href="/photos/betka.jpg"><img  id="cart-a" src="photos/image.png" alt="fuckme"></a></li>
     <li><a href='http://'>About</a></li>
     <li><a href='phpwebfiles/login.php'>Login</a></li>
   </ul>
-    <div id="logi"></div>
-  </nav>
+  <div id="logi"></div>
+</nav>
+<li id="cart"><a href="/photos/betka.jpg"><img  id="cart-a" src="photos/image.png" alt="fuckme"></a></li>
   <div class="video-bg">
   <video autoplay loop muted>
     <source src="photos/rolex.mp4" type="video/mp4">
   </video>
 </div>
-<divg id="col">
+<div id="col">
 <h1>NowaKolekcja</h1>
-<div>
+</div>
 
 <div id="p-box">
-<div>e</div>
-<div>e</div>
-<div>e</div>
-<div>e</div>
+<div class='c1 card'></div>
+<div class='c2 card'></div>
+<div class='c3 card'></div>
+<div class='c4 card'></div>
 </div>
 </body>
 <script src="dymanic.js"></script>

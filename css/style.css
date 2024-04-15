@@ -8,10 +8,12 @@ html{
 #cart{
 	
 	scale: 35%;
-	/* position: relative; */
-	bottom: 3px;
-	float:right;
-	/* right: 68vh; */
+	position: relative;
+	bottom: 20px;
+	float:rightg;
+	right: 63vh;
+	margin: 0px;
+	padding: 0px;
 }
 #body{
 	
@@ -64,25 +66,9 @@ html{
 }
 
 
-#col{
-	position: relative;
-	/* bottom: 100vh; */
-	/* padding: 10vh; */
-	top: 110vh;
-	font-family: "Rubik", sans-serif;
-	font-optical-sizing: auto;
-	font-weight: 400;
-	font-size: 40px;
-	margin: auto;
-	font-style: normal;
-	display: inline-block;
-	text-align: center;
-	justify-content: center;
-	
-  }
 
 
-  
+
 #menu ul{
     margin: 0 auto;
 	padding: 0;
@@ -107,7 +93,7 @@ li {
     
 }
 #menu li:last-of-type{
-    position: absolute;
+	position: absolute;
 	right: 120px;
 
     
@@ -140,15 +126,46 @@ li {
 
 #menu li a:hover {
 	color: #d3d3d3;
-
-
+	
+	
 }
 
 #p-box{
-	float: bottom;
+	top: 110vh;
 	position: relative;
 	border: 2px solid black;
+	width: 100%;
+	align-items: center;
+	margin: auto;
+	text-align: center;
 }
+#col{
+	position: relative;
+	top: 110vh;
+	/* padding: 10vh; */	font-family: "Rubik", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-size: 40px;
+	margin: auto;
+	font-style: normal;
+	display: grid;
+	text-align: center;
+	justify-content: center;
+	
+  }
+.card{
+	height: 600px;
+	width: 400px;
+	display: inline-flex;
+	align-items: center;
+	align-items: center;
+	margin: 10px 10px;
+	background-color: rebeccapurple;
+	transition: transform 1s ease-in-out;
+	
+}
+
+
 @media screen and (max-width: 750px){
 	
 }
