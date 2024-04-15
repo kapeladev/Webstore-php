@@ -1,0 +1,132 @@
+html{
+	width: 100%;
+	height: 100px;
+	overflow-x: hidden;
+	padding: 0px;
+}
+#body{
+
+    padding: 0px;
+    margin: 0px;
+}
+#menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+	background: #2F2F2F;
+	height: 40px;
+    width: 100%;
+	border: 1px solid #6D6D6D;
+    font-family: "Montserrat", sans-serif;
+    padding: 0px;
+    margin: 0px;
+    
+}
+#ul{
+    margin: 0 auto;
+	padding: 0;
+	list-style: none;
+    position: absolute;
+    height: 100%;
+	width: 800px;
+}
+/* video{
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+} */
+.video-bg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: -1;
+	overflow: hidden;
+  }
+  
+  .video-bg video {
+	min-width: 100%;
+	min-height: 80%;
+	width: auto;
+	height: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  }
+  
+#menu ul{
+    margin: 0 auto;
+	padding: 0;
+	list-style: none;
+    position: absolute;
+    height: 100%;
+}
+#menu li {
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+    position: relative;
+    height: 100%;
+    
+}
+li {
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+    position: relative;
+    height: 100%;
+    
+}
+#menu li:last-of-type{
+    position: absolute;
+	right: 120px;
+
+    
+}
+#logi{
+    background-color: #6D6D6D;
+    margin-top: 11px;
+    height: 20px;
+    border-radius: 10px;
+	margin-right: 128px;
+	width: 50px;
+	float: right;
+}
+#menu ul {
+	width: 100%;
+	text-align: center;
+}
+#menu li {
+	display: inline-block;
+}
+#menu a {
+	display: block;
+	line-height: 43px;
+	padding: 0 14px;
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+#menu li a:hover {
+	color: #d3d3d3;
+
+
+}
+
+#cart{
+	
+	scale: 35%;
+	position: relative;
+	bottom: 3px;
+	float:right;
+	right: 650px;
+}
+@media screen and (max-width: 800px){
+
+}
+
