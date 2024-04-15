@@ -1,16 +1,26 @@
 html{
 	width: 100%;
-	height: 100px;
+	height: 200vh;
 	overflow-x: hidden;
 	padding: 0px;
+
+}
+#cart{
+	
+	scale: 35%;
+	/* position: relative; */
+	bottom: 3px;
+	float:right;
+	/* right: 68vh; */
 }
 #body{
-
-    padding: 0px;
+	
+	padding: 0px;
     margin: 0px;
 }
 #menu {
-    position: absolute;
+	min-width: 100%;
+	position: absolute;
     top: 0;
     left: 0;
 	background: #2F2F2F;
@@ -23,19 +33,15 @@ html{
     
 }
 #ul{
-    margin: 0 auto;
+	min-width: 100%;
+	margin: 0 auto;
 	padding: 0;
 	list-style: none;
     position: absolute;
     height: 100%;
 	width: 800px;
 }
-/* video{
-	margin: 0px;
-	padding: 0px;
-	width: 100%;
-	height: 100%;
-} */
+
 .video-bg {
 	position: fixed;
 	top: 0;
@@ -43,19 +49,39 @@ html{
 	width: 100vw;
 	height: 100vh;
 	z-index: -1;
-	overflow: hidden;
-  }
-  
-  .video-bg video {
+	/* overflow: hidden; */
+}
+
+.video-bg  {
 	min-width: 100%;
-	min-height: 80%;
+	min-height: 100%;
 	width: auto;
 	height: auto;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+}
+
+
+#col{
+	position: relative;
+	/* bottom: 100vh; */
+	/* padding: 10vh; */
+	top: 110vh;
+	font-family: "Rubik", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-size: 40px;
+	margin: auto;
+	font-style: normal;
+	display: inline-block;
+	text-align: center;
+	justify-content: center;
+	
   }
+
+
   
 #menu ul{
     margin: 0 auto;
@@ -118,15 +144,12 @@ li {
 
 }
 
-#cart{
-	
-	scale: 35%;
+#p-box{
+	float: bottom;
 	position: relative;
-	bottom: 3px;
-	float:right;
-	right: 650px;
+	border: 2px solid black;
 }
-@media screen and (max-width: 800px){
-
+@media screen and (max-width: 750px){
+	
 }
 

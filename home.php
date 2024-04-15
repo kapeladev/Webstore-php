@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     
+    
 </head>
 <body>
 <nav id='menu'>
@@ -19,8 +20,8 @@
     <li><a href='phpwebfiles/home.php'>Home</a></li>
     <li><a href='http://'>Belts</a></li>
     <li><a href='http://'>Necklaces</a></li>
-    <li><a href='http://'>About</a></li>
     <li id="cart"><a href="/photos/betka.jpg"><img  id="cart-a" src="photos/image.png" alt="fuckme"></a></li>
+    <li><a href='http://'>About</a></li>
     <li><a href='phpwebfiles/login.php'>Login</a></li>
   </ul>
     <div id="logi"></div>
@@ -30,10 +31,16 @@
     <source src="photos/rolex.mp4" type="video/mp4">
   </video>
 </div>
-<div>
-<h1>Html</h1>
+<divg id="col">
+<h1>NowaKolekcja</h1>
 <div>
 
+<div id="p-box">
+<div>e</div>
+<div>e</div>
+<div>e</div>
+<div>e</div>
+</div>
 </body>
 <script src="dymanic.js"></script>
 </html>
