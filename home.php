@@ -31,16 +31,18 @@
     <source src="photos/rolex.mp4" type="video/mp4">
   </video>
 </div>
+<div class="second">
 <div id="col">
 <h1>NowaKolekcja</h1>
 </div>
-
 <div id="p-box">
-<div class='c1 card'></div>
-<div class='c2 card'></div>
-<div class='c3 card'></div>
-<div class='c4 card'></div>
+  <div class='c1 card'><img src="photos/test.png" height="600px" width="400px"> </div>
+  <div class='c2 card'><img src="photos/test.png" height="600px" width="400px"></div>
+  <div class='c3 card'><img src="photos/test.png" height="600px" width="400px"></div>
+  <div class='c4 card'><img src="photos/test.png" height="600px" width="400px"></div>
 </div>
+</div>
+
 </body>
 <script src="dymanic.js"></script>
 </html>
