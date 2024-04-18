@@ -21,7 +21,7 @@
     <li><a href='http://'>Belts</a></li>
     <li><a href='http://'>Necklaces</a></li>
     <li><a href='http://'>About</a></li>
-    <li><a href='phpwebfiles/login.php'>Login</a></li>
+    <li><a href='/login.php'>Login</a></li>
   </ul>
   <div id="logi"></div>
 </nav>
