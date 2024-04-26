@@ -4,27 +4,34 @@ $conn = dbconnect();
 $time = date('Y-m-d H:i:s');
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    if(isset($_POST['name']) != '' && isset($_POST['email']) && isset($_POST['password'])){
-        $name = $_POST["name"];
-        $email = $_POST["email"];
-        $password = $_POST["password"];
-    }
-    try{
-        $sql = "SELECT username From users WHERE  username = '$name' OR gmail = '$email';";
-        // $sql = "INSERT INTO users (username, gmail, password, created_at) VALUES ('$name', '$email', '$password', '$time')";
-        if (mysqli_query($conn, $sql)) {
-
-        } else {
-            echo $errorCode = mysqli_errno($conn);
+    $name = $_POST["name"];
+    $password = hash("sha256", $_POST["password"]);
+    $email = $_POST["email"];
+        try{
+        // $sql_insert = "INSERT INTO users (username, email, password, created_at) VALUES ('$name', '$email', '$password', '$time')";
+            // $res = mysqli_query($conn, $sql_insert);
+            $stmt = $conn -> prepare("INSERT INTO users (username, email, password, created_at) VALUES (?, ?, ?, ?)");
+            $stmt -> bind_param("ssss",$name,$email,$password,$time);
+            $stmt ->execute();
+            header("Location: login.php");
+            ob_end_flush();
         }
-        if($errorCode == 1062){
-            
-        }
+        
+        catch(Exception $e){
+            if(strpos($e, "'$name-$email'") !== false){
+                echo "the username: "."'$name'"."and gmail: "."'$email'"." is already in use";
+                
+            }elseif(strpos($e, "'$name") !== false){
+                echo "the username: "."'$name'"." is already in use";
+            }
+            elseif(strpos($e, "'$email'") !== false){
+                echo "the email: "."'$email'". "is already in use";
+            }
+            else{
+                echo $e->getMessage();
+            }
+        
     }
-    catch(Exception $e) {
-        echo "Username or email is already in use" .$e;
-}
-
-}
+    }
 
 ?>
