@@ -1,0 +1,25 @@
+.e  h1{
+ color: red;
+}
+#p  h1{
+    color: blue;
+   }
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.navbar ul{
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: auto;
+}
+.navbar ul > a{
+    color: aqua;
+    display: flex;
+    margin-right: 20% ;
+    
+}
+
