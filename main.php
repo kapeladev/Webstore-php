@@ -7,7 +7,8 @@
     <style><?=file_get_contents("style2.css")?></style>
 </head>
 <body>
-    <?php include("navbar.php")?>
-    <?php include("hel2.php")?>
+    <?php 
+    include("navbar.php");
+    ?>
     </body>
 </html>

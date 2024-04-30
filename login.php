@@ -11,8 +11,10 @@ require(__DIR__."/loginhandler.php");?>
 <body>
     
 <form method="post">
-<input type="text" name="name" required><br>
-<input type="password" name="password" required><br>
+ Name:
+<input type="text" name="name" placeholder="Name" required><br>
+Password:
+<input type="password" name="password" placeholder="Password" required><br>
 <input type="submit" value="login"><br>
 <input type="button" name="logout" value="index" onclick="broski()">
     

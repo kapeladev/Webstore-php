@@ -1,25 +1,125 @@
-.e  h1{
- color: red;
-}
-#p  h1{
-    color: blue;
-   }
 *{
     margin: 0px;
     padding: 0px;
 }
-.navbar ul{
-    justify-content: space-around;
-    align-items: center;
+/*NAV-BAR*/
+nav{
     display: flex;
-    flex-direction: row;
-    width: 100%;
-    margin: auto;
+    /* justify-self: center; */
+    overflow: hidden;
 }
-.navbar ul > a{
-    color: aqua;
-    display: flex;
-    margin-right: 20% ;
+.navbar{
+    background-color: #3853d8; 
+}
+
+.navbar  ul{
+    justify-content: flex-start;
+    align-items: center;
+    display: inline-flex;
+    list-style: none;
+    width: fit-content;
+
     
 }
 
+.navbar .nav-3 {
+    display: flex;
+    justify-content: flex-end;
+}
+.navbar .nav-2{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+ 
+.navbar .nav-1 li:nth-child(1){
+    margin: 0 0.5em;
+}
+.navbar .nav-1 li:nth-child(2){
+    vertical-align: text-top;
+    display: flex;
+    align-content: top;
+    border-left: 0.001cm solid whitesmoke;
+}
+.navbar .nav-3 li:nth-child(2){
+    
+    border-left: 0.001cm solid whitesmoke;
+}
+
+.navbar .nav-1 li:nth-child(3){
+    padding-left: 5px;
+    padding-right: 5px;
+    border-right: 0.001cm solid whitesmoke;
+}
+
+.navbar .txtnav{
+    font-family: "Roboto", sans-serif;
+}
+.navbar .sel
+{
+    font-size: 0.65rem; 
+    color:white;
+}
+.navbar .cat{
+    display: block; 
+    font-size: 0.75rem; 
+    color: white;
+}
+
+
+#img-a{
+
+}
+.ico {
+    min-width: 20%;
+    scale: 80%;
+    cursor: pointer;
+
+}
+
+@media only screen and (max-width: 550px) {
+    .navbar{
+    }    
+    .navbar .nav-1 li:nth-child(1){
+        margin: 0 0.1em;
+    }
+}
+@media only screen and (max-width: 433px) {
+    .navbar .nav-1 .nav1-text{
+        display: none;
+    } 
+    .navbar .nav-1{
+        width: min-content;
+    }
+    .navbar .nav-2 {
+        display: flex;
+        width: 102.4px;
+        margin: auto;
+        box-sizing: content-box;
+
+    }
+
+    .navbar .nav-3 li{
+        width: 25%;
+        display: flex;
+        justify-content: center;
+    }
+    .navbar .nav-3{
+        width: 99.4px;
+        display: flex;
+        justify-content: center;
+    }
+    .navbar .nav-3 li:nth-child(1){
+        
+    }
+    .navbar .nav-3 li:nth-child(2){
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+    }
+    .navbar .nav-3 li:nth-child(3){
+        margin-right: 3%;
+    }
+}
+.center{
+    /* farkenar@gmail.com */
+}
