@@ -16,14 +16,9 @@ require(__DIR__."/loginhandler.php");?>
 Password:
 <input type="password" name="password" placeholder="Password" required><br>
 <input type="submit" value="login"><br>
-<input type="button" name="logout" value="index" onclick="broski()">
+<input type="button" name="logout" value="index" onclick="<?php header("Location: inxdex.php")?>">
     
 
-    <script>
-            function broski() {
-                window.location.href = "index.php";
-            }
-    </script>
 </from>
 
 </body>

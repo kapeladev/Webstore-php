@@ -1,8 +1,8 @@
 <?php 
 session_start(); 
 if(isset($_SESSION['name'])){
-    echo $_SESSION['name'];
+   header("Location: /logpage.php");
 }
 else{
-    echo "nie ma loga";
+    header("Location: /login.php");
 }?>

@@ -1,13 +1,8 @@
 <?php 
 session_start();
-function valuser($session_val){
-if (isset($session_val)){
-  echo"zalogowany na konto: ".$session_val;
-}
-else{
-    echo 'nie jestes zalogowany';
-
-}
-}
-
+  $log = false;
+  if(isset($_SESSION['name'])){
+    $log = true;
+  }
+  return $log;
 ?>
