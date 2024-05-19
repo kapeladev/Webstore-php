@@ -7,7 +7,7 @@
     <style><?php file_get_contents('style2.css') ?></style>
 </head>
 <body>
-<div class="front-text-container">
+    <div class="front-text-container">
     <div class="front-head">
      <h1>#1 Pick in Watches Category</h1>
      <a>#1 Pick in Watches Category</a>   
@@ -16,9 +16,9 @@
     </div>
     <div class="front-productpage"> 
     <div class="abc">
-    <div class="front-title">
-        <div class="front-productcategory">
-            <span>watches</span>
+        <div class="front-title">
+            <div class="front-productcategory">
+            <span><?php echo $mark ?></span>
         </div>
         <div class="front-productname">
             <h1><?php
@@ -34,19 +34,19 @@
         </div>
         <div class="front-buy-container">
             <div class="front-price">
-            <a>250.00$</a></div>
-            <div class="front-quantity">
-            <table>
-                <td><img class="minus" src="assets/minus.svg"></td>
-                <td><a class="num">2</a></td>
-                <td><img class="plus" src="assets/plus.svg"></td>
-            </table>
-        </div>
-            <div class="front-buy">
-        <table>
+                <a id="price"><?php echo "$".$price ?></a></div>
+                <div class="front-quantity">
+                    <table>
+                        <td><img class="minus"  src="assets/minus.svg" onclick="minus()"></td>
+                        <td><a class="num" id="num">1</a></td>
+                        <td><img class="plus" src="assets/plus.svg" onclick="plus()"></td>
+                    </table>
+                </div>
+                <div class="front-buy">
+                    <table>
         <td><img src="assets/shopcart.svg"></td>
-        <td>Buy</td>
-        </table>
+        <td><a>Buy</a></td>
+    </table>
     </div>
 </div>
       
@@ -54,7 +54,7 @@
     
     </div>
     <div class="front-product">
-            <div class="product-img-container">
+        <div class="product-img-container">
             <img class="product-img" src="data:image/jpg;charset=utf8;base64,<?php echo $photo; ?>" /> 
             <div class="forimg">
             <div class="product-img-side"><img class="product-img2" src="data:image/jpg;charset=utf8;base64,<?php echo $photo; ?>" /></div>
@@ -63,24 +63,32 @@
             </div>
             </div>
 
-     
+        
      </div>
-     </div>
-     <div class="front-other-container">
-     <!-- <div class=""> -->
-        <div class="front-other-products"><img class="product-img3" src="data:image/jpg;charset=utf8;base64,<?php echo $photo; ?>" /></div>
-        <div class="front-other-products"><img class="product-img3" src="data:image/jpg;charset=utf8;base64,<?php echo $photo; ?>" /></div>
-        <div class="front-other-products"><img class="product-img3" src="data:image/jpg;charset=utf8;base64,<?php echo $photo; ?>" /></div>
-        <div class="front-other-products"><img class="product-img3" src="data:image/jpg;charset=utf8;base64,<?php echo $photo; ?>" /></div>
-    <!-- </div> -->
-    <!-- <div class=""> -->
-        <div class="front-other-products"><img class="product-img3" src="data:image/jpg;charset=utf8;base64,<?php echo $photo; ?>" /></div>
-        <div class="front-other-products"><img class="product-img3" src="data:image/jpg;charset=utf8;base64,<?php echo $photo; ?>" /></div>
-        <div class="front-other-products"><img class="product-img3" src="data:image/jpg;charset=utf8;base64,<?php echo $photo; ?>" /></div>
-        <div class="front-other-products"><img class="product-img3" src="data:image/jpg;charset=utf8;base64,<?php echo $photo; ?>" /></div>
-    <!-- </div> -->
     </div>
-     </div>
+    <div class="front-other-container">
+        <table class="other">
+            <tr>
+        <td><div class="other-container"><img class="other-img-container" src="data:image/jpg;charset=utf8;base64,<?php echo $photo; ?>" /><div class="other-text-container"><?php echo $name."<br>".$price?></div></div></td>
+        <td><div class="other-container"><img class="other-img-container" src="data:image/jpg;charset=utf8;base64,<?php echo $photo; ?>" /><div class="other-text-container"><?php echo $name."<br>".$price?></div></div></td>
+        <td><div class="other-container"><img class="other-img-container" src="data:image/jpg;charset=utf8;base64,<?php echo $photo; ?>" /><div class="other-text-container"><?php echo $name."<br>".$price?></div></div></td>
+        <td><div class="other-container"><img class="other-img-container" src="data:image/jpg;charset=utf8;base64,<?php echo $photo; ?>" /><div class="other-text-container"><?php echo $name."<br>".$price?></div></div></td>
+
+    </tr>
+    <tr>
+        <td><div class="other-container"><img class="other-img-container" src="data:image/jpg;charset=utf8;base64,<?php echo $photo; ?>" /><div class="other-text-container"><?php echo $name."<br>".$price?></div></div></td>
+        <td><div class="other-container"><img class="other-img-container" src="data:image/jpg;charset=utf8;base64,<?php echo $photo; ?>" /><div class="other-text-container"><?php echo $name."<br>".$price?></div></div></td>
+        <td><div class="other-container"><img class="other-img-container" src="data:image/jpg;charset=utf8;base64,<?php echo $photo; ?>" /><div class="other-text-container"><?php echo $name."<br>".$price?></div></div></td>
+        <td><div class="other-container"><img class="other-img-container" src="data:image/jpg;charset=utf8;base64,<?php echo $photo; ?>" /><div class="other-text-container"><?php echo $name."<br>".$price?></div></div></td>
+
+    </tr>
+</table>
+<div>
+    <section>contact</section>
+</div>
+        
+</div>
 </div>
 </body>
+<script src="./dynmic.js"></script>
 </html>

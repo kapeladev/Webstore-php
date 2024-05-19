@@ -18,7 +18,7 @@
     <li><a id="img-a"><img class="ico logo" src="assets/drip.svg" alt=""></a></li>
 </ul>
 <ul class="nav-3">
-    <li><a id="img-a" href="./userpage.php"><img class="ico user" src="assets/user.svg" alt=""></a></li>
+    <li><a id="img-a" href="login/userpage.php"><img class="ico user" src="assets/user.svg" alt=""></a></li>
     <!-- <li><a id="img-a"><img class="ico heart" src="heart.svg" alt=""></a></li> -->
     <li><a id="img-a" href=""><img class="ico search" src="assets/cart.svg" alt=""></a></li>
 </ul>
