@@ -1,8 +1,9 @@
 <?php 
 session_start();
-require(__DIR__.'/dbh.php');
+require('dbh.php');
 $conn = dbconnect();
 if(isset($_SESSION['name'])){
+    $abc =  $_SESSION['name'];
     echo $_SESSION["name"]." jesteś już zalogowany ";
 }
 else{

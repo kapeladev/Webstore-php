@@ -1,6 +1,6 @@
 <?php 
 ob_start();
-require(__DIR__."/registerhandler.php");?>
+// require(__DIR__."/registerhandler.php");?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

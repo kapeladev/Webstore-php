@@ -3,6 +3,7 @@ require("userval.php");
 // valuser($_SESSION['name']);
 $pages = [
     "/index" => "main.php",
+    "/cart" => "cart.php",
     "/userpage" => "userpage.php",
     "/register" => "register.php",
     "/login" => "login.php",

@@ -10,7 +10,6 @@
     require('producthandler.php');
     include("navbar.php");
     include("shopfront.php");
-    
     ?>
     </body>
 </html>
