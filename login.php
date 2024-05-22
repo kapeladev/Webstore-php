@@ -1,5 +1,7 @@
 <?php   
-require(__DIR__."/loginhandler.php");?>
+require(__DIR__."/loginhandler.php");
+include("navbar.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +18,7 @@ require(__DIR__."/loginhandler.php");?>
 Password:
 <input type="password" name="password" placeholder="Password" required><br>
 <input type="submit" value="login"><br>
-<input type="button" name="logout" value="index" onclick="<?php header("Location: logout.php")?>">
+<!-- <input type="button" name="logout" value="index" onclick="window.onload(""> -->
 
 </from>
 </div>    

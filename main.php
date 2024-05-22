@@ -10,6 +10,9 @@
     require('producthandler.php');
     include("navbar.php");
     include("shopfront.php");
+    include("cookies.php");
+
+    // include('getcartvalue.php');
     ?>
     </body>
 </html>

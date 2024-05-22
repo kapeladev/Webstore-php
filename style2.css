@@ -196,6 +196,11 @@ a{
 
     /* width: fit-content; */
 }
+#product-name{
+    width: fit-content;
+    max-width: 330px;
+    font-size: 1.5rem;
+}
 .product-img{
     max-width: 400px;
     max-height: 400px;
@@ -438,6 +443,14 @@ margin-bottom: 2rem;
             justify-content: center;
             
         }
+        #product-name{
+            width: fit-content;
+            max-width: 280px;
+            font-size: 1.1rem;
+        }
+        h4{
+            font-size: 0.8rem;
+        }
         
     }
     @media screen and (max-width: 750px) {
@@ -590,6 +603,7 @@ margin-bottom: 2rem;
         .abc{
             display: flex;
             flex-direction: column;
+            justify-content: center;
         }
         .front-title{
             display: flex;
@@ -654,12 +668,30 @@ margin-bottom: 2rem;
     max-width: 150px;
     /* background-color: white; */
 }
+.cart-quant{
+    font-family: "Montserrat", sans-serif;    
+    font-size: 2rem;
+     
+   
+}
 .cart-product-name{
    font-family: "Montserrat", sans-serif;    
    font-size: 2rem;
     
 }
+.cart-mark{
+   font-family: "Montserrat", sans-serif;    
+   font-size: 2rem;
+   margin: 0 1rem 0 1rem;
+    
+}
 .cart-product-price{
+   font-family: "Montserrat", sans-serif;    
+   font-size: 2rem;
+
+
+}
+.total{
    font-family: "Montserrat", sans-serif;    
    font-size: 2rem;
 
@@ -709,4 +741,23 @@ margin-bottom: 2rem;
 .addproduct-container{
     display: flex;
     align-items: center;
+}
+
+
+/* ADD PRODUCT FORM */
+.addform label{
+   display: block;
+}
+.addform-container{
+    display: flex;
+    margin-top: 2%;
+    justify-content: center;
+    text-align: center;
+}
+.addform .ad{
+    margin: 10px 0;
+    
+}
+.addform .file .file-input{
+    width : 176px;
 }

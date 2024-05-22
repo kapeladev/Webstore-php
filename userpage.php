@@ -1,9 +1,13 @@
 <?php 
 session_start(); 
-if(isset($_SESSION['name'])){
+echo "elo";
+if(isset($_SESSION['name']) && $_SESSION['name'] !='admin'){
    header("Location: logpage.php");
 }
+elseif($_SESSION['name'] == 'admin'){
+    header("Location: adminpage.php");
+}
 else{
-
-    header("Location: logreg.php");
-}?>
+    header("Location: login.php");
+}
+?>

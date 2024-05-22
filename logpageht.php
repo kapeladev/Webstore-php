@@ -16,7 +16,7 @@
             <a href="logout.php"><input type="button" value="logout"></a>
             <div class="addproduct-container">
                 <div class="addproduct-name">add product</div>
-                <div class="addproduct-button-container"><input type="button" class="addproduct-button" value="Click here" onclick="window.load"></input></div>
+                <div class="addproduct-button-container"><a href="addproduct.php"><input type="button" class="addproduct-button" value="Click here"></input></a></div>
             </div>
         </div>
     </div>

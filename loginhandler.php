@@ -3,11 +3,10 @@ session_start();
 require('dbh.php');
 $conn = dbconnect();
 if(isset($_SESSION['name'])){
-    $abc =  $_SESSION['name'];
-    echo $_SESSION["name"]." jesteś już zalogowany ";
+    echo $_SESSION['name'];
 }
-else{
-    echo "ure not logged";
+else{ 
+    echo $_SESSION['name'];
 }
 if($_SERVER['REQUEST_METHOD'] == "POST"){
 $name = $_POST['name'];

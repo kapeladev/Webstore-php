@@ -1,6 +1,6 @@
 <?php
 require("dbh.php");
-$ids = [1, 2, 3]; // Array of IDs to fetch
+$ids = [1, 2, 3,4,5,6,7,8]; // Array of IDs to fetch
 $products = []; // Array to store fetched products
 
 $conn = dbconnect();
@@ -21,7 +21,6 @@ foreach ($ids as $id) {
             $mark = $row['markid'];
             $photo = base64_encode($row['image']);
 
-            // Load two elements
             if (strpos($price, '.') === false) {
                 $price = $price . ".00";
             }
@@ -29,7 +28,14 @@ foreach ($ids as $id) {
             if (strpos($mark, '1') === 0) {
                 $mark = "/rolex";
             }
-
+            if (strpos($mark, '2') === 0) {
+                $mark = "/omega";
+            }
+            if (strpos($mark, '3') === 0) {
+                $mark = "/breitling";
+            }
+            
+            
             // Store each value in a separate variable
             ${"product" . $productCount . "name"} = $name;
             ${"product" . $productCount . "price"} = $price;
